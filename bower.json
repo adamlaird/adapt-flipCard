@@ -1,0 +1,15 @@
+{
+  "name": "adapt-flipCard",
+  "version": "0.0.1",
+   "repository": "git://github.com/aniketdharia/adapt-flipCard.git",
+  "homepage": "https://github.com/aniketdharia/adapt-flipCard",
+  "authors": [
+    "Aniket Dharia <aniket.dharia@credipoint.com>"
+  ],
+  "description": "Flip Card Template developed by CrediPoint Solutions for Adapt Framework.",
+  "main": "/js/adapt-flipCard.js",
+  "keywords": [
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}

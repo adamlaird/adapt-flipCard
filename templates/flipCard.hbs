@@ -1,0 +1,30 @@
+<div id="flipCardContainer" class="flipCard-container">
+    {{#if title}}
+        <div id="puzzleObjectMatchingTitleTextContainer" class="component-title">
+            <h4 class="component-title-inner">{{title}}</h4>
+        </div>
+    {{/if}}
+    {{#if body}}
+        <div class="component-body">
+            <div class="component-body-inner">
+                {{{body}}}
+            </div>
+        </div>
+    {{/if}}
+    {{#each items}}
+	<div id="flipCard-{{@index}}" class="flipCard-card">
+		<div id="frontFlipCard-{{@index}}" class="flipCard-front flipCard-face">
+			<img id="frontFlipCardImage-{{@index}}" src="{{frontImageSrc}}"/>
+		</div>
+		
+		<div id="backFlipCard-{{@index}}" class="flipCard-back flipCard-face">
+			{{backHeading}}
+			<ul>
+                {{#each backListOfOptions}}
+				<li>{{this}}</li>
+                {{/each}}
+			</ul>
+		</div>
+	</div>
+    {{/each}}
+</div>
